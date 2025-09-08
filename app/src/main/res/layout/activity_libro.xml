@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibroActivity"
+    tools:layout_editor_absoluteX="-4dp"
+    tools:layout_editor_absoluteY="95dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/maina"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LibroActivity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TextView
+            android:id="@+id/tvNombreLibro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="76dp"
+            android:text="Libro name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imgLibro"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDatosPrincipales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="52dp"
+            android:text="Director - paginas - anio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgLibro"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombreLibro" />
+
+        <TextView
+            android:id="@+id/tvCategoria1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="175dp"
+            android:text="Categoria1"
+            app:layout_constraintBottom_toTopOf="@+id/tvDescripcion"
+            app:layout_constraintEnd_toStartOf="@+id/tvCategoria2"
+            app:layout_constraintStart_toEndOf="@+id/imgLibro"
+            app:layout_constraintTop_toBottomOf="@+id/tvDatosPrincipales" />
+
+        <TextView
+            android:id="@+id/tvCategoria2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="175dp"
+            android:text="Categoria2"
+            app:layout_constraintBottom_toTopOf="@+id/tvDescripcion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDatosPrincipales" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="358dp"
+            android:layout_height="295dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.811" />
+
+        <ImageView
+            android:id="@+id/imgLibro"
+            android:layout_width="500px"
+            android:layout_height="700px"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="49dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvDescripcion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
